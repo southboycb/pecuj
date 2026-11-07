@@ -472,6 +472,11 @@ dialog button.chip{border:1px solid #6b4317;background:#2a1c0e;color:#ffcf9e;cli
 .stack,.vwrap,.unit{display:grid;grid-template-columns:minmax(0,1fr)}
 .app{overflow-x:clip}
 @media(max-width:360px){.strip>span{padding:7px 6px}.strip b{font-size:13px}.strip small{font-size:9.5px;letter-spacing:.2px;padding-right:8px}.strip small .ic{display:none}.led{right:5px;top:9px}.model{font-size:27px}.model.long{font-size:22px}.app{padding-left:10px;padding-right:10px}.title h1{font-size:32px}}
+/* iPhone: obsah pod stavovým řádkem (přidáno na plochu) */
+.top{padding-top:calc(22px + env(safe-area-inset-top))}
+.lamp{top:calc(-4px + env(safe-area-inset-top))}
+.gear{min-width:48px;min-height:48px;margin-right:-6px;position:relative;z-index:2}
+.app{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
 @media print{
   :root{color-scheme:light;color:#111;background:#fff}
   body{background:#fff}
